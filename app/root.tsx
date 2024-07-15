@@ -28,3 +28,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return <Outlet />;
 }
+
+export async function loader() {
+  await new Promise<void>((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, 2000);
+  });
+
+  const timestamp = Date.now();
+  console.log("timestamp", timestamp);
+  return { timestamp };
+}
+
+// https://remix.run/docs/en/main/route/should-revalidate#shouldrevalidate
+export function shouldRevalidate() {
+  return false;
+}

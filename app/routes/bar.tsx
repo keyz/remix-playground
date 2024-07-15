@@ -1,14 +1,6 @@
-import type { MetaFunction } from "@remix-run/node";
 import { NavLink, useRouteLoaderData } from "@remix-run/react";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
-
-export default function IndexRoute() {
+export default function BarRoute() {
   const data = useRouteLoaderData("root");
 
   return (
@@ -25,8 +17,8 @@ export default function IndexRoute() {
         </NavLink>
       </nav>
 
-      <h1>home</h1>
-      <p>This is the home route.</p>
+      <h1>Bar</h1>
+      <p>This is the bar route.</p>
 
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
