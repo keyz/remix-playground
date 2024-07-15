@@ -1,0 +1,13 @@
+package-lock.json
+pnpm-lock.yaml
+LICENSE
+
+# ==== MARK: Everything below is copied from `.gitignore` ====
+
+node_modules
+
+/.cache
+/build
+.env
+
+.DS_Store
