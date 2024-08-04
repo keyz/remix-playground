@@ -7,8 +7,8 @@
     "build": "remix vite:build",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "prettier:check": "prettier --check \"**/*.{css,html,js,json,md,mdx,svg,ts,tsx,yaml,yml}\" --ignore-path ./.prettierignore",
-    "prettier:write": "prettier --write \"**/*.{css,html,js,json,md,mdx,svg,ts,tsx,yaml,yml}\" --ignore-path ./.prettierignore",
+    "prettier:check": "prettier --check \"**/*.{css,html,js,cjs,mjs,json,md,mdx,svg,ts,tsx,yaml,yml}\" --ignore-path ./.prettierignore",
+    "prettier:write": "prettier --write \"**/*.{css,html,js,cjs,mjs,json,md,mdx,svg,ts,tsx,yaml,yml}\" --ignore-path ./.prettierignore",
     "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc"
   },
